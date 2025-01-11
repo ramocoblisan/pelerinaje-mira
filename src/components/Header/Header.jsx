@@ -10,43 +10,43 @@ const Header = () => {
       <div className={styles.topBar}>
         <div className={styles.titles}>
             <div className={`${styles.title} ${styles.title1} ${styles.lineUp}`}>
-              <span className={styles.litera}>P</span>
-              <span className={styles.litera}>e</span>
-              <span className={styles.litera}>l</span>
-              <span className={styles.litera}>e</span>
-              <span className={styles.litera}>r</span>
-              <span className={styles.litera}>i</span>
-              <span className={styles.litera}>n</span>
-              <span className={styles.litera}>a</span>
-              <span className={styles.litera}>j</span>
-              <span className={styles.litera}>e</span>
+              <span className={styles.letter}>P</span>
+              <span className={styles.letter}>e</span>
+              <span className={styles.letter}>l</span>
+              <span className={styles.letter}>e</span>
+              <span className={styles.letter}>r</span>
+              <span className={styles.letter}>i</span>
+              <span className={styles.letter}>n</span>
+              <span className={styles.letter}>a</span>
+              <span className={styles.letter}>j</span>
+              <span className={styles.letter}>e</span>
               <div className={`${styles.title} ${styles.p2title}`}>
-                <span className={styles.litera}>M</span>
-                <span className={styles.litera}>i</span>
-                <span className={styles.litera}>r</span>
-                <span className={styles.litera}>a</span>
+                <span className={styles.letter}>M</span>
+                <span className={styles.letter}>i</span>
+                <span className={styles.letter}>r</span>
+                <span className={styles.letter}>a</span>
               </div>
             </div>
             <div className={`${styles.title} ${styles.lineUp}`}>
-              <span className={styles.litera}>"S</span>
-              <span className={styles.litera}>c</span>
-              <span className={styles.litera}>h</span>
-              <span className={styles.litera}>i</span>
-              <span className={styles.litera}>m</span>
-              <span className={styles.litera}>b</span>
-              <span className={styles.litera}>a</span>
-              <span className={styles.litera}>r</span>
-              <span className={styles.litera}>e</span>
-              <span className={styles.litera}>a</span>
+              <span className={styles.letter}>"S</span>
+              <span className={styles.letter}>c</span>
+              <span className={styles.letter}>h</span>
+              <span className={styles.letter}>i</span>
+              <span className={styles.letter}>m</span>
+              <span className={styles.letter}>b</span>
+              <span className={styles.letter}>a</span>
+              <span className={styles.letter}>r</span>
+              <span className={styles.letter}>e</span>
+              <span className={styles.letter}>a</span>
               <div className={`${styles.title} ${styles.p2title}`}>
-                <span className={styles.litera}>l</span>
-                <span className={styles.litera}>a</span>
+                <span className={styles.letter}>l</span>
+                <span className={styles.letter}>a</span>
               </div>
               <div className={`${styles.title} ${styles.p2title}`}>
-                <span className={styles.litera}>F</span>
-                <span className={styles.litera}>a</span>
-                <span className={styles.litera}>ț</span>
-                <span className={styles.litera}>ă"</span>
+                <span className={styles.letter}>F</span>
+                <span className={styles.letter}>a</span>
+                <span className={styles.letter}>ț</span>
+                <span className={styles.letter}>ă"</span>
               </div>
             </div>
         </div>
@@ -88,11 +88,11 @@ const Header = () => {
       Haideti sa ne alaturam Mariei in
       </p>
       <div className={styles.words}>
-          <h2 className={styles.rotatingText}>Credinta</h2>
-          <h2 className={styles.rotatingText}>Iubire</h2>
-          <h2 className={styles.rotatingText}>Comuniune</h2>
+          <p className={styles.rotatingText}>Credinta</p>
+          <p className={styles.rotatingText}>Iubire</p>
+          <p className={styles.rotatingText}>Comuniune</p>
         </div>
-        <img src={bird} className={styles.logo}></img>
+        <img src={bird} alt='logo' className={styles.logo}></img>
     </header>
   );
 };
