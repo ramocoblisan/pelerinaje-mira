@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pelerinaje-mira/static/css/main.1d3fcc5b.css",
-    "main.js": "/pelerinaje-mira/static/js/main.1a655b64.js",
+    "main.css": "/pelerinaje-mira/static/css/main.17c7437d.css",
+    "main.js": "/pelerinaje-mira/static/js/main.eea9d267.js",
     "static/media/mary.png": "/pelerinaje-mira/static/media/mary.23b7e66835b4f662ea22.png",
     "static/media/bird.png": "/pelerinaje-mira/static/media/bird.f87cdb601d99664491e2.png",
     "index.html": "/pelerinaje-mira/index.html",
-    "main.1d3fcc5b.css.map": "/pelerinaje-mira/static/css/main.1d3fcc5b.css.map",
-    "main.1a655b64.js.map": "/pelerinaje-mira/static/js/main.1a655b64.js.map"
+    "main.17c7437d.css.map": "/pelerinaje-mira/static/css/main.17c7437d.css.map",
+    "main.eea9d267.js.map": "/pelerinaje-mira/static/js/main.eea9d267.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d3fcc5b.css",
-    "static/js/main.1a655b64.js"
+    "static/css/main.17c7437d.css",
+    "static/js/main.eea9d267.js"
   ]
 }
