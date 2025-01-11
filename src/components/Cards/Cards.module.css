@@ -1,0 +1,69 @@
+.cardSection {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;  
+    height: 1000px; 
+    background-image: url('/public/bgd-section2.png');
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    color: #024CAA;
+    text-shadow: 2px 2px 3px #54b3d6;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    animation: 5s anim-popoutin ease 2s;
+    animation-iteration-count: 3;
+    }
+
+@keyframes anim-popoutin {
+    0% {
+      color: #54b3d6;
+      transform: scale(0);
+      opacity: 0;
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+      color: #54b3d6;
+      transform: scale(1.3);
+      opacity: 1;
+      text-shadow: 3px 10px 5px #000;
+    }
+    50% {
+      color: #54b3d6;
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 #000;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 #000;
+    }
+  }
+  
+  .fromtop {
+    animation: 2s anim-fromtop linear infinite;
+  }
+  @keyframes anim-fromtop {
+    0% { opacity: 0; transform: translateY(-100%);}
+    25% { opacity: 1; transform: translateY(0%);}
+    50% {
+    }
+    100% {
+    }
+  }
+
+.cardsContent {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    width: 80vw;
+    margin: 0 auto; 
+}
