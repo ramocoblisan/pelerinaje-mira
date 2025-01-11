@@ -85,10 +85,10 @@ const Header = () => {
         </div>
       </div>
       <p className={styles.rotatingParagraph}>
-      Haideti sa ne alaturam Mariei in
+      Haideți să ne alăturăm Mariei în
       </p>
       <div className={styles.words}>
-          <p className={styles.rotatingText}>Credinta</p>
+          <p className={styles.rotatingText}>Credință</p>
           <p className={styles.rotatingText}>Iubire</p>
           <p className={styles.rotatingText}>Comuniune</p>
         </div>

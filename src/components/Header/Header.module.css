@@ -186,7 +186,7 @@
     font-style: italic;
     font-size: 25px;
     margin-left: 1120px;
-    background: -webkit-linear-gradient(350deg, #EC8305, #FBE6CD);
+    background: -webkit-linear-gradient(350deg, #EC8305, #F9D9B4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -207,7 +207,7 @@
     text-align: center;
     text-transform: uppercase;
     bottom: 53%;
-    background: -webkit-linear-gradient(350deg, #EC8305, #FBE6CD);
+    background: -webkit-linear-gradient(350deg, #EC8305, #F9D9B4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
