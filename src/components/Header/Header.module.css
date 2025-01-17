@@ -140,7 +140,8 @@
   .phones {
     display: flex;
     flex-direction: row;
-    gap: 50px
+    gap: 50px;
+   
   }
 
   .contactItem {
@@ -150,6 +151,7 @@
   .phone {
     display: flex;
     gap: 5px;
+    
   }
 
   .email {
@@ -182,8 +184,11 @@
   }
 
   .text {
-   color: var(--titleColor);
+    background: -webkit-linear-gradient(350deg, var(--orangeText), #F5C182);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
    font-family: "DM Serif Text", serif;
+   font-weight: 600;
   }
 
   .letter {

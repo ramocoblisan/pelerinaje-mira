@@ -39,8 +39,8 @@ export default function CardComp({ title, image, period }) {
         backgroundColor: 'primary.dark', 
         color: '#fff', 
         transform: 'scale(1.02)', 
-    },
-    transition: 'transform 0.3s ease-in-out',
+        },
+        transition: 'transform 0.3s ease-in-out',
          fontSize: '15px'}}>Află mai multe</Button>
       </CardActions>
     </Card>
