@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pelerinaje-mira/static/css/main.7464057b.css",
-    "main.js": "/pelerinaje-mira/static/js/main.e4b29328.js",
+    "main.js": "/pelerinaje-mira/static/js/main.9127d4c0.js",
     "static/media/bgd-section2.png": "/pelerinaje-mira/static/media/bgd-section2.353429a4fbc39ef7c641.png",
     "static/media/mobileBgd.png": "/pelerinaje-mira/static/media/mobileBgd.95b49c7d2f0caa6844a5.png",
     "static/media/medjugorje3.png": "/pelerinaje-mira/static/media/medjugorje3.acf6a7dbf2ccbfb5d2e2.png",
@@ -13,10 +13,10 @@
     "static/media/bird.png": "/pelerinaje-mira/static/media/bird.f87cdb601d99664491e2.png",
     "index.html": "/pelerinaje-mira/index.html",
     "main.7464057b.css.map": "/pelerinaje-mira/static/css/main.7464057b.css.map",
-    "main.e4b29328.js.map": "/pelerinaje-mira/static/js/main.e4b29328.js.map"
+    "main.9127d4c0.js.map": "/pelerinaje-mira/static/js/main.9127d4c0.js.map"
   },
   "entrypoints": [
     "static/css/main.7464057b.css",
-    "static/js/main.e4b29328.js"
+    "static/js/main.9127d4c0.js"
   ]
 }
