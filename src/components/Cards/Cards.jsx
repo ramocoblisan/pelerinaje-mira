@@ -37,7 +37,7 @@ const cardData = [
   {
     title: "Medjugorje",
     image: medjugorje5,
-    period: '29.12-04.02',
+    period: '29.12-04.01',
   }
 ];
 
