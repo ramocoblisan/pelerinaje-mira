@@ -25,6 +25,7 @@
     font-style: normal;
     animation: 5s anim-popoutin ease 2s;
     animation-iteration-count: 3;
+    font-size: 27px;
     }
 
 @keyframes anim-popoutin {
@@ -36,7 +37,7 @@
     }
     25% {
       color: var(--textColor);
-      transform: scale(1.3);
+      transform: scale(1.1);
       opacity: 1;
       text-shadow: 3px 10px 5px #000;
     }

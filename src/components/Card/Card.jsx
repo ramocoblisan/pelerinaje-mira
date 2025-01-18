@@ -20,14 +20,14 @@ export default function CardComp({ title, image, period }) {
         gutterBottom 
         variant="h5" 
         component="div"
-        sx={{fontWeight: 'bold', fontFamily: 'Playfair Display, serif', color: '#F5C182' }}>
+        sx={{fontWeight: 'bold', fontFamily: 'Playfair Display, serif', color: '#F5C182', fontSize: '20px' }}>
           {title} 
         </Typography>
         <Typography 
         gutterBottom 
         variant="h5" 
         component="div"
-        sx={{fontFamily: 'Playfair Display, serif', color: '#F5C182', fontWeight:'800' }}>
+        sx={{fontFamily: 'Playfair Display, serif', color: '#F5C182', fontWeight:'800', fontSize: '20px' }}>
           {period} 
         </Typography>
       </CardContent>
