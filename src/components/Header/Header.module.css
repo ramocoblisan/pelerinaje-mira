@@ -209,6 +209,7 @@
   .svgs {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: auto;
      width: 100vw;
   }
@@ -230,7 +231,7 @@
   } */
 
   .text {
-    background: -webkit-linear-gradient(350deg, var(--orangeText), #F5C182);
+    background: -webkit-linear-gradient(350deg, var(--orangeText), #F1A850);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
    font-family: "DM Serif Text", serif;
@@ -253,7 +254,7 @@
     font-style: italic;
     font-size: 20px;
     /* margin-left: 1120px; */
-    background: -webkit-linear-gradient(350deg, var(--orangeText), #F9D9B4);
+    background: -webkit-linear-gradient(350deg, var(--orangeText), #F3B469);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
@@ -295,7 +296,7 @@
     font-size: 20px;
     opacity: 0;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(350deg, var(--orangeText), #F9D9B4);
+    background: -webkit-linear-gradient(350deg, var(--orangeText), #F3B469);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;

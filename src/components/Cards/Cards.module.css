@@ -9,8 +9,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;  
-    height: 1000px; 
-    background-image: url('/public/bgd-section2.png');
+    min-height: 100vh; 
+    background-image: url('/public/bgdsection2-mobile.png');
 }
 
 .title {
