@@ -62,7 +62,7 @@ export default function CardComp({ title, image, period, details, departureDate,
               <a href="tel:+40745966920" className={styles.phone}>
                 <FaPhone className={styles.icon}/>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61561761496232" target="_blank" rel="noopener noreferrer">
+              <a href="https://m.me/61561761496232" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48" opacity="0.7" className={styles.svg}>
                 <linearGradient id="SVGID_1__oLVubex7Asfc_gr1" x1="37.081" x2="10.918" y1="10.918" y2="37.081" gradientUnits="userSpaceOnUse">
                   <stop offset="0" stopColor="#60affe"></stop><stop offset=".033" stopColor="#6ab4fe"></stop>
