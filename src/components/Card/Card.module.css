@@ -51,7 +51,7 @@
 
 /* Textul din suprapunere */
 .overlayText {
-  color: white;
+  color: #F3B469;
   font-size: 16px;
   text-align: center;
 }
@@ -66,12 +66,50 @@
   transform: scale(1.1); /* Zoom pe imagine */
 }
 
+.price {
+  font-size: 17px;
+  font-weight: 700;
+  font-style: italic;
+  width: 100px;
+  margin: auto;
+  border-bottom: thick double #32a1ce;
+
+}
+.contactItems {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 10px;
+}
+
+.text {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 15px;
+  /* color: #54b3d6; */
+}
+
+.registrationText {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.registrationText:hover {
+  transform: scale(1.0) translateX(5px);
+}
+
+.icon {
+  height: 25px;
+}
 /* Conținutul cardului */
 .contentCard {
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
+
 
 /* Media query pentru dispozitive mobile */
 @media (max-width: 767px) {
