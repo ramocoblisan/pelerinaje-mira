@@ -90,7 +90,7 @@ export default function CardComp({ title, image, period, details, departureDate,
     </div>
 
     {/* Conținutul cardului */}
-    <CardContent className={styles.contentCard}>
+    <CardContent className={styles.contentCard} style={{paddingBottom: '16px'}}>
       <Typography
         gutterBottom
         variant="h5"
@@ -101,7 +101,11 @@ export default function CardComp({ title, image, period, details, departureDate,
           color: '#346fbb',
           fontSize: '20px',
           borderRight: '1px solid #32a1ce',
-          paddingRight: '10px'
+          paddingRight: '10px',
+          paddingBottom: '0px',
+          '@media (min-width: 768px)': {
+            fontSize: '23px', 
+            },
         }}
       >
         {title}
@@ -115,33 +119,15 @@ export default function CardComp({ title, image, period, details, departureDate,
           color: '#346fbb',
           fontWeight: '900',
           fontSize: '20px',
+          paddingBottom: '0px',
+          '@media (min-width: 768px)': {
+            fontSize: '23px', 
+            },
         }}
       >
         {period}
       </Typography>
     </CardContent>
-
-    {/* Butonul din card */}
-    {/* <CardActions>
-      {showButton && (
-        <Button
-          size="small"
-          sx={{
-            fontFamily: 'DM Serif Text, serif',
-            color: '#54b3d6',
-            '&:hover': {
-              backgroundColor: 'primary.dark',
-              color: '#fff',
-              transform: 'scale(1.02)',
-            },
-            transition: 'transform 0.3s ease-in-out',
-            fontSize: '15px',
-          }}
-        >
-          Află mai multe
-        </Button>
-      )}
-    </CardActions> */}
   </Card>
   );
 }

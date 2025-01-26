@@ -16,7 +16,7 @@
 } */
 
 .customCard { 
-  width: calc(33% - 20px); /* Trei carduri pe rând pe ecrane mai mari */
+  width: 100%; /* Trei carduri pe rând pe ecrane mai mari */
   margin-bottom: 20px;
   position: relative; /* Necesită poziționare pentru conținut */
   overflow: hidden; /* Ascunde elementele care depășesc containerul */
@@ -104,17 +104,34 @@
 }
 /* Conținutul cardului */
 .contentCard {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 0px;
+  padding: 16px;
 }
 
 
-/* Media query pentru dispozitive mobile */
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .customCard {
-    width: 100%; /* Un card pe rând */
+    width: calc(50% - 20px); 
     margin-bottom: 20px; /* Păstrează spațiul între carduri */
   }
+
+  .contentCard {
+    font-size: 22px;
+  }
 }
+
+@media (min-width: 1024px) {
+  .customCard {
+    width: calc(33% - 20px); 
+    margin-bottom: 20px; /* Păstrează spațiul între carduri */
+  }
+
+  .contentCard {
+   
+  }
+}
+

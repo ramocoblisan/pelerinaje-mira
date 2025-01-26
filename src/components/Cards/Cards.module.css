@@ -26,7 +26,7 @@
     animation: 5s anim-popoutin ease 2s;
     animation-iteration-count: 3;
     font-size: 27px;
-    }
+  }
 
 @keyframes anim-popoutin {
     0% {
@@ -72,4 +72,40 @@
     justify-content: space-around; 
     width: 80vw;
     margin: 0 auto; 
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 37px;
+  }
+
+  @keyframes anim-popoutin {
+    0% {
+      color: var(--textColor);
+      transform: scale(0);
+      opacity: 0;
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+      color: var(--textColor);
+      transform: scale(1.5);
+      opacity: 1;
+      text-shadow: 3px 10px 5px #000;
+    }
+    50% {
+      color: var(--textColor);
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 #000;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 #000;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  
 }
