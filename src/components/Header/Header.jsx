@@ -107,6 +107,9 @@ const Header = () => {
             </a>
           </nav> */}
       </div>
+      <div className={styles.logoContainer}>
+      <img src={bird} alt='logo' className={styles.logo}></img>
+      </div>
       <p className={styles.rotatingParagraph}>
       Haideți să ne alăturăm Mariei în
       </p>
@@ -115,7 +118,6 @@ const Header = () => {
           <p className={styles.rotatingText}>Iubire</p>
           <p className={styles.rotatingText}>Comuniune</p>
       </div>
-      <img src={bird} alt='logo' className={styles.logo}></img>
     </header>
   );
 };

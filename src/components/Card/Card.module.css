@@ -124,10 +124,10 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1150px) {
   .customCard {
     width: calc(33% - 20px); 
-    margin-bottom: 20px; /* Păstrează spațiul între carduri */
+    margin-bottom: 20px; 
   }
 
   .contentCard {
