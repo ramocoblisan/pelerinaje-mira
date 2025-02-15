@@ -1,12 +1,21 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import styles from './Header.module.css';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import bird from '../../images/bird.png'
 
 
 const Header = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <header className={styles.header}>
+    <header
+      ref={ref}
+      className={`${styles.header} ${inView ? 'fade-in in-view' : 'fade-in'}`}
+    >
       <div className={styles.topBar}>
         <div className={styles.contacts}>
           <div className={styles.phones}>

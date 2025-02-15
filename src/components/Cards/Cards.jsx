@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Cards.module.css';
+import { useInView } from 'react-intersection-observer';
 import CardComp from '../Card/Card';
 import medjugorje1 from '../../images/medjugorje1.png';
 import medjugorje2 from '../../images/medjugorje2.png';
@@ -66,24 +67,30 @@ const cardData = [
 ];
 
 export default function Cards() {
+  const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+      });
+
   return (
-    <div className={styles.cardSection}>
+    <div ref={ref}
+    className={`${styles.cardSection} ${inView ? 'fade-in in-view' : 'fade-in'}`}>
       <h2 className={styles.title}>Pelerinajele anului 2025</h2>
       <div className={styles.cardsContent}>
-        {cardData.map((card, index) => (
-          <CardComp 
-            key={index}
-            title={card.title}
-            image={card.image} 
-            showOverlay={index < 3}
-            period={card.period}
-            details={card.details}
-            departureDate={card.departureDate}
-            returnDate={card.returnDate}
-            price={card.price}
-            showButton={index < 3}
-          />
-        ))}
+      {cardData.map((card, index) => (
+        <CardComp
+          key={index}
+          title={card.title}
+          image={card.image}
+          showOverlay={index < 3}
+          period={card.period}
+          details={card.details}
+          departureDate={card.departureDate}
+          returnDate={card.returnDate}
+          price={card.price}
+          showButton={index < 3}
+        />
+      ))}
       </div>
     </div>
   );

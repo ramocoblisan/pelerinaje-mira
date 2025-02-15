@@ -394,19 +394,27 @@
 @media (min-width: 1024px) {
 
 .header {
-  height: 500px;
+  height: 700px;
   background-image: url('/public/mary.png');
+  overflow: hidden; 
+  width: 100vw;
 }
 
 .topBar {
-  margin-top: 15px;
+  margin-top: 0px;
   margin-bottom: 15px;
 }
 
 .contacts {
   justify-content: center;
+  align-items: center;
   gap: 50px;
   margin-top: 0px;
+  /* border-bottom: 0.5px solid var(--textColor); */
+  padding: 10px 0px;
+  width: 100vw;
+  /* background-color: white; */
+  height: 50px;
 }
 
 .phones {

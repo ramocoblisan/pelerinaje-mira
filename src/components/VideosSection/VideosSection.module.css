@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+:root {
+  --titleColor: #024CAA;
+  --textColor: #54b3d6;
+  --orangeText: #EC8305;
+}
+
+/* Stiluri de bază pentru mobil */
+.videoSectionContainer {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* Fundalul cu nori animați */
+.cloudBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('../../images/videosSecBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+  z-index: -1;
+  animation: moveClouds 60s linear infinite;
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif; /* Noul font */
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--orangeText); /* Culoare solidă */
+  text-align: center;
+  margin: 20px 0;
+  animation: slideInFromLeft 1.5s ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+.videoContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Stiluri pentru tabletă */
+@media (min-width: 768px) {
+  .videoSectionContainer {
+    padding: 30px 0;
+  }
+
+  .sectionTitle {
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .videoContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+/* Stiluri pentru desktop */
+@media (min-width: 1024px) {
+  .videoSectionContainer {
+    padding: 50px 0;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+    margin: 50px 0;
+  }
+
+  .videoContainer {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Mărește dimensiunea minimă a coloanelor */
+    /* max-width: 1400px; Mărește lățimea maximă a containerului */
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+}

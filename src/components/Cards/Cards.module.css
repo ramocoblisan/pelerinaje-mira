@@ -1,6 +1,7 @@
 :root {
   --titleColor: #024CAA;
   --textColor: #54b3d6;
+  --titleSec2: #1b5db2;
 }
 
 .cardSection {
@@ -10,19 +11,19 @@
     background-size: cover;
     width: 100vw;  
     min-height: 100vh; 
-    background-image: url('/public/bgdsection2-mobile.png');
+    background-image: url('/public/bgdsection2-mobile.jpg');
 }
 
 .title {
     display: flex;
     justify-content: center;
     margin: 50px 0px;
-    color: var(--titleColor);
-    text-shadow: 2px 2px 3px var(--textColor);
-    font-family: "Playfair Display", serif;
+    color: var(--titleSec2);
+    text-shadow: 2px 2px 3px white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    font-style: italic;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
     animation: 5s anim-popoutin ease 2s;
     animation-iteration-count: 3;
     font-size: 27px;
@@ -30,27 +31,27 @@
 
 @keyframes anim-popoutin {
     0% {
-      color: var(--textColor);
+      color: var(--titleSec2);
       transform: scale(0);
       opacity: 0;
-      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      text-shadow: 0 0 0 white;
     }
     25% {
-      color: var(--textColor);
+      color: var(--titleSec2);
       transform: scale(1.1);
       opacity: 1;
-      text-shadow: 3px 10px 5px #000;
+      text-shadow: 3px 10px 5px white;
     }
     50% {
-      color: var(--textColor);
+      color: var(--titleSec2);
       transform: scale(1);
       opacity: 1;
-      text-shadow: 1px 0 0 #000;
+      text-shadow: 1px 0 0 white;
     }
     100% {
       transform: scale(1);
       opacity: 1;
-      text-shadow: 1px 0 0 #000;
+      text-shadow: 1px 0 0 white;
     }
   }
   
@@ -70,8 +71,10 @@
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around; 
-    width: 80vw;
+    gap: 20px; 
+    width: 90vw;
     margin: 0 auto; 
+    margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -81,27 +84,27 @@
 
   @keyframes anim-popoutin {
     0% {
-      color: var(--textColor);
+      color: var(--titleSec2);
       transform: scale(0);
       opacity: 0;
-      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      text-shadow: 0 0 0 white;
     }
     25% {
-      color: var(--textColor);
+      color: var(--titleSec2);
       transform: scale(1.5);
       opacity: 1;
-      text-shadow: 3px 10px 5px #000;
+      text-shadow: 3px 10px 5px white;
     }
     50% {
-      color: var(--textColor);
+      color: var(--titleSec2);
       transform: scale(1);
       opacity: 1;
-      text-shadow: 1px 0 0 #000;
+      text-shadow: 1px 0 0 white;
     }
     100% {
       transform: scale(1);
       opacity: 1;
-      text-shadow: 1px 0 0 #000;
+      text-shadow: 1px 0 0 white;
     }
   }
 }
