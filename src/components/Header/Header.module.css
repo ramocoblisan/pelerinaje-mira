@@ -7,7 +7,6 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-image: url('/public/mobileBgd.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -214,14 +213,6 @@
      width: 100vw;
   }
 
-  .logoContainer {
-    display: none;
-  }
-
-  .logo {
-    display: none;
-  }
-
   .text {
     background: -webkit-linear-gradient(350deg, var(--orangeText), #F1A850);
     -webkit-background-clip: text;
@@ -395,7 +386,7 @@
 
 .header {
   height: 700px;
-  background-image: url('/public/mary.png');
+  /* background-image: url('/public/headerbgd.png'); */
   overflow: hidden; 
   width: 100vw;
 }
@@ -407,6 +398,7 @@
 
 .contacts {
   justify-content: center;
+  /* background-image: url('../../images/mobileBgd.png'); */
   align-items: center;
   gap: 50px;
   margin-top: 0px;
@@ -417,51 +409,40 @@
   height: 50px;
 }
 
+.contactItem {
+ font-size: 18px;
+}
+
 .phones {
   flex-direction: row;
   gap: 50px;
 }
 
 .titles {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px black;
   align-items: start;
   padding-left: 40px;
   padding-top: 30px;
+  margin-top: 15px;
+  color:#EC8305;
 }
 
 .title1 {
   padding-left: 55px;
 }
 
-.logoContainer {
-  display: flex;
-  width: 400px;
-  justify-content: center;
-  align-items: center;
+.title {
+  font-size: 40px;
 }
 
-.logo {
-  display: block;
-    width: 100px;
-    height: 100px;
-    z-index: 5;
-    opacity: 0.9;
-    border-radius: 20%;
-    padding: 10px;
-    margin-top: 20px;
-    background-image: none;
-    margin-left: 50px;
-  }
-
 .rotatingParagraph {
-  justify-content: end;
-  width: 90vw;
-  margin-bottom: 0px;
-  margin-top: -100px;
+ display: none;
 }
 
 .words {
-  justify-content: end;
-  width: 87vw;
+  display: none;
 }
 
 }
