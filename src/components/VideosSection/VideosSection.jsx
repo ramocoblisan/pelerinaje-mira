@@ -7,11 +7,11 @@ import video2 from '../../assets/videos/video2.mp4';
 import video3 from '../../assets/videos/video3.mp4';
 import video4 from '../../assets/videos/video4.mp4';
 import video5 from '../../assets/videos/video5.mp4';
-import poster1 from '../../images/cross.png';
-import poster2 from '../../images/cross.png';
-import poster3 from '../../images/cross.png';
-import poster4 from '../../images/cross.png';
-import poster5 from '../../images/cross.png';
+import poster1 from '../../images/poster1.png';
+import poster2 from '../../images/poster2.png';
+import poster3 from '../../images/poster3.png';
+import poster4 from '../../images/poster4.png';
+import poster5 from '../../images/poster5.png';
 
 const VideoSection = () => {
 
