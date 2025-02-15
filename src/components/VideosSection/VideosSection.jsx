@@ -7,6 +7,11 @@ import video2 from '../../assets/videos/video2.mp4';
 import video3 from '../../assets/videos/video3.mp4';
 import video4 from '../../assets/videos/video4.mp4';
 import video5 from '../../assets/videos/video5.mp4';
+import poster1 from '../../images/cross.png';
+import poster2 from '../../images/cross.png';
+import poster3 from '../../images/cross.png';
+import poster4 from '../../images/cross.png';
+import poster5 from '../../images/cross.png';
 
 const VideoSection = () => {
 
@@ -16,11 +21,11 @@ const VideoSection = () => {
     });
 
     const videos = [
-        { src: video1 },
-        { src: video2 },
-        { src: video3 },
-        { src: video4 },
-        { src: video5 },
+        { src: video1, poster: poster1 },
+        { src: video2, poster: poster2 },
+        { src: video3, poster: poster3 },
+        { src: video4, poster: poster4 },
+        { src: video5, poster: poster5 },
       ];
 
     return (
@@ -32,7 +37,7 @@ const VideoSection = () => {
         <h2 className={styles.sectionTitle}>Amintiri din pelerinaje</h2>
         <div className={styles.videoContainer}>
             {videos.map((video, index) => (
-            <VideoPlayer key={index} videoSrc={video.src} videoTitle={video.title} />
+            <VideoPlayer key={index} videoSrc={video.src} posterSrc={video.poster} videoTitle={video.title} />
             ))}
       </div>
       </div>
