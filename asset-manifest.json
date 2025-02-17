@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pelerinaje-mira/static/css/main.5808505c.css",
-    "main.js": "/pelerinaje-mira/static/js/main.6b1eab62.js",
+    "main.css": "/pelerinaje-mira/static/css/main.c932f88a.css",
+    "main.js": "/pelerinaje-mira/static/js/main.e4867533.js",
     "static/media/video1.mp4": "/pelerinaje-mira/static/media/video1.1d2d37cb4f261881465b.mp4",
     "static/media/video4.mp4": "/pelerinaje-mira/static/media/video4.e3b6a6023d88e97cbddd.mp4",
     "static/media/video2.mp4": "/pelerinaje-mira/static/media/video2.8e448b25835584d14d20.mp4",
@@ -10,8 +10,6 @@
     "static/media/bgdsection2-mobile.jpg": "/pelerinaje-mira/static/media/bgdsection2-mobile.68880da0a4936b8a43f7.jpg",
     "static/media/headerbgd.png": "/pelerinaje-mira/static/media/headerbgd.a554f6f8b9492cd82b48.png",
     "static/media/mobileBgd.png": "/pelerinaje-mira/static/media/mobileBgd.95b49c7d2f0caa6844a5.png",
-    "static/media/headerBgd2.jpeg": "/pelerinaje-mira/static/media/headerBgd2.731d0c797b97902be75f.jpeg",
-    "static/media/headerBgd3.jpeg": "/pelerinaje-mira/static/media/headerBgd3.c6dc6f10e7855d0ac7f6.jpeg",
     "static/media/medjugorje5.png": "/pelerinaje-mira/static/media/medjugorje5.01ad68bac1d01d6febd2.png",
     "static/media/medjugorje2.png": "/pelerinaje-mira/static/media/medjugorje2.0032323025f5dae5fbfc.png",
     "static/media/krakow.png": "/pelerinaje-mira/static/media/krakow.d234ed4d79a54f96aa51.png",
@@ -25,11 +23,11 @@
     "static/media/poster2.png": "/pelerinaje-mira/static/media/poster2.1ff5c75186daf8fe5533.png",
     "static/media/poster5.png": "/pelerinaje-mira/static/media/poster5.7773ad7c0bb368a92ffd.png",
     "index.html": "/pelerinaje-mira/index.html",
-    "main.5808505c.css.map": "/pelerinaje-mira/static/css/main.5808505c.css.map",
-    "main.6b1eab62.js.map": "/pelerinaje-mira/static/js/main.6b1eab62.js.map"
+    "main.c932f88a.css.map": "/pelerinaje-mira/static/css/main.c932f88a.css.map",
+    "main.e4867533.js.map": "/pelerinaje-mira/static/js/main.e4867533.js.map"
   },
   "entrypoints": [
-    "static/css/main.5808505c.css",
-    "static/js/main.6b1eab62.js"
+    "static/css/main.c932f88a.css",
+    "static/js/main.e4867533.js"
   ]
 }
