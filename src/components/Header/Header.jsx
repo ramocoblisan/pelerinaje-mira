@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import styles from './Header.module.css';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
-import headerBgd from '../../images/headerbgd.png';
-import headerBgd2 from '../../images/headerBgd2.jpeg';
-import headerBgd3 from '../../images/headerBgd3.jpeg';
-import mobileBgd from '../../images/mobileBgd.png'
 
 const Header = () => {
 
@@ -14,52 +10,10 @@ const Header = () => {
     threshold: 0.1,
   });
 
-  const images = [
-    `url(${headerBgd})`,
-    `url(${headerBgd2})`,
-    `url(${headerBgd3})`
-  ];
-
-const [currentImageIndex, setCurrentImageIndex] = useState(0);
-const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
-
-  // Verifică dimensiunea ecranului la montarea componentei și la redimensionarea ferestrei
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth > 1024);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    if (isDesktop) {
-      const interval = setInterval(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 5000); // 5000 ms = 5 secunde
-
-      // Curăță intervalul când componenta este demontată
-      return () => clearInterval(interval);
-    }
-  }, [images.length, isDesktop]);
-
-  // Stilul dinamic pentru fundal
-  const headerStyle = {
-    width: '100%',
-    backgroundImage: isDesktop
-      ? `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), ${images[currentImageIndex]}` // Desktop
-      : `url(${mobileBgd})`, // Mobil și tabletă
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    transition: 'background-image 1s ease-in-out'
-  };
-
   return (
     <header
       ref={ref}
-      className={`${styles.headerStyle} ${styles.header} ${inView ? 'fade-in in-view' : 'fade-in'}`}
-      style={headerStyle}
+      className={`${styles.header} ${inView ? 'fade-in in-view' : 'fade-in'}`}
     >
       <div className={styles.topBar}>
         <div className={styles.contacts}>

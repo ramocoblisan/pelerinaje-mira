@@ -5,76 +5,72 @@
 }
 
 .cardSection {
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;  
-    min-height: 100vh; 
-    background-image: url('/public/bgdsection2-mobile.jpg');
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;  
+  min-height: 100vh; 
+  background-image: url('/public/bgdsection2-mobile.jpg');
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0px;
-    color: var(--titleSec2);
-    text-shadow: 2px 2px 3px white;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 900;
-    font-style: italic;
-    font-optical-sizing: auto;
-    animation: 5s anim-popoutin ease 2s;
-    animation-iteration-count: 3;
-    font-size: 27px;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  color: #4ba1c0;
+  text-shadow: 2px 2px 3px white;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-size: 27px;
+  opacity: 0; /* Ascunde titlul inițial */
+  transform: scale(0); /* Poziția inițială pentru animație */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.title.inView {
+  opacity: 1; /* Afișează titlul */
+  transform: scale(1); /* Adu titlul în poziția normală */
+  animation: anim-popoutin 5s ease-out;
+  animation-iteration-count: 3; /* Aplică animația */
+}
 
 @keyframes anim-popoutin {
-    0% {
-      color: var(--titleSec2);
-      transform: scale(0);
-      opacity: 0;
-      text-shadow: 0 0 0 white;
-    }
-    25% {
-      color: var(--titleSec2);
-      transform: scale(1.1);
-      opacity: 1;
-      text-shadow: 3px 10px 5px white;
-    }
-    50% {
-      color: var(--titleSec2);
-      transform: scale(1);
-      opacity: 1;
-      text-shadow: 1px 0 0 white;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-      text-shadow: 1px 0 0 white;
-    }
+  0% {
+    color: var(--titleSec2);
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 white;
   }
-  
-  .fromtop {
-    animation: 2s anim-fromtop linear infinite;
+  25% {
+    color: var(--titleSec2);
+    transform: scale(1.1);
+    opacity: 1;
+    text-shadow: 3px 10px 5px white;
   }
-  @keyframes anim-fromtop {
-    0% { opacity: 0; transform: translateY(-100%);}
-    25% { opacity: 1; transform: translateY(0%);}
-    50% {
-    }
-    100% {
-    }
+  50% {
+    color: var(--titleSec2);
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 white;
   }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 white;
+  }
+}
 
 .cardsContent {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    gap: 20px; 
-    width: 90vw;
-    margin: 0 auto; 
-    margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 20px; 
+  width: 90vw;
+  margin: 0 auto; 
+  margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -110,5 +106,5 @@
 }
 
 @media (min-width: 1024px) {
-  
+  /* Adaugă stiluri pentru desktop dacă este necesar */
 }

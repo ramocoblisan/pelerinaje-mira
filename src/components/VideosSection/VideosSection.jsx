@@ -14,35 +14,37 @@ import poster4 from '../../images/poster4.png';
 import poster5 from '../../images/poster5.png';
 
 const VideoSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
-    const { ref, inView } = useInView({
-      triggerOnce: true,
-      threshold: 0.1,
-    });
+  const videos = [
+    { src: video1, poster: poster1 },
+    { src: video2, poster: poster2 },
+    { src: video3, poster: poster3 },
+    { src: video4, poster: poster4 },
+    { src: video5, poster: poster5 },
+  ];
 
-    const videos = [
-        { src: video1, poster: poster1 },
-        { src: video2, poster: poster2 },
-        { src: video3, poster: poster3 },
-        { src: video4, poster: poster4 },
-        { src: video5, poster: poster5 },
-      ];
-
-    return (
-      <>
+  return (
+    <>
       <div 
-      ref={ref}
-      className={`${styles.videoSectionContainer} ${inView ? 'fade-in in-view' : 'fade-in'}`}>
+        ref={ref}
+        className={`${styles.videoSectionContainer} ${inView ? 'fade-in in-view' : 'fade-in'}`}
+      >
         <div className={styles.cloudBackground}></div>
-        <h2 className={styles.sectionTitle}>Amintiri din pelerinaje</h2>
+        <h2 className={`${styles.sectionTitle} ${inView ? styles.inView : ''}`}>
+          Amintiri din pelerinaje
+        </h2>
         <div className={styles.videoContainer}>
-            {videos.map((video, index) => (
+          {videos.map((video, index) => (
             <VideoPlayer key={index} videoSrc={video.src} posterSrc={video.poster} videoTitle={video.title} />
-            ))}
+          ))}
+        </div>
       </div>
-      </div>
-      </>
-    );
-  };
-  
-  export default VideoSection;
+    </>
+  );
+};
+
+export default VideoSection;
