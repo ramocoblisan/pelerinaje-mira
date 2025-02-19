@@ -35,7 +35,7 @@ const Header = () => {
           </div>
           <div className={`${styles.contactItem} ${styles.email}`}>
             <FaEnvelope className={styles.icon} />
-            <span className={styles.text}>contact@pelerinaje.ro</span>
+            <span className={styles.text}><a href="mailto:contact@pelerinajemira.ro">contact@pelerinajemira.ro</a></span>
           </div>
           <div className={styles.svgs}>
             <a href="https://www.facebook.com/profile.php?id=61561761496232" target="_blank" rel="noopener noreferrer">

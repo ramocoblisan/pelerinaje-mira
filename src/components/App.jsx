@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header/Header';
 import Cards from './Cards/Cards';
 import VideoSection from './VideosSection/VideosSection';
+import Footer from './Footer/Footer';
 
 export const App = () => {
 
@@ -10,6 +11,7 @@ export const App = () => {
       <Header />
       <Cards />
       <VideoSection />
+      <Footer />
     </>
   );
 };
