@@ -1,6 +1,7 @@
 import styles from './Card.module.css'
 import React from 'react';
 import { FaPhone } from 'react-icons/fa'
+import { FaArrowDown } from 'react-icons/fa'; 
 import {
   Card,
   CardMedia,
@@ -10,7 +11,7 @@ import {
   // Button
 } from '@mui/material';
 
-export default function CardComp({ title, image, period, details, departureDate, returnDate, price, showOverlay }) {
+export default function CardComp({ title, image, period, details, departureDate, returnDate, price, showOverlay, showMoreInfoArrow }) {
 
   return (
     <Card
@@ -30,6 +31,11 @@ export default function CardComp({ title, image, period, details, departureDate,
         image={image}
         title={title}
       />
+      {showMoreInfoArrow && 
+      (<div className={styles.hoverIndicator}>
+        <FaArrowDown className={styles.arrowIcon} />
+        <span>Mai multe detalii</span>
+      </div>)}
       {/* Overlay-ul care apare la hover */}
       {showOverlay && 
         (<div className={styles.overlay}>

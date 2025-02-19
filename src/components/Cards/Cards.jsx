@@ -82,6 +82,7 @@ export default function Cards() {
             title={card.title}
             image={card.image}
             showOverlay={index < 3}
+            showMoreInfoArrow={index < 3}
             period={card.period}
             details={card.details}
             departureDate={card.departureDate}
