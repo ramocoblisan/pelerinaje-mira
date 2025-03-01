@@ -9,7 +9,7 @@ const VideoPlayer = ({ videoSrc, posterSrc }) => {
         height="360" 
         controls 
         poster={posterSrc} 
-        style={{ backgroundColor: 'black' }} // Asigură un fundal negru
+        style={{ backgroundColor: 'black' }} 
       >
         <source src={videoSrc} type="video/mp4" />
         Browserul tău nu suportă tag-ul video.

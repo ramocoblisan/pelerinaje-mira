@@ -1,7 +1,7 @@
 .footer {
-  background-color: #f8f9fa; /* Culoare de fundal deschisă */
+  background-color: #f8f9fa; 
   padding: 20px 0;
-  border-top: 1px solid #e0e0e0; /* Linie de separare */
+  border-top: 1px solid #e0e0e0; 
   font-family: "DM Serif Text", serif;
   width: 100vw;
 }
@@ -11,37 +11,37 @@
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  flex-direction: column; /* Layout coloană pentru mobile */
+  flex-direction: column; 
   gap: 20px;
 
 }
 
 .contactInfo, .privacyNotice, .copyright {
   flex: 1;
-  min-width: 100%; /* Ocupă întreaga lățime pe mobile */
+  min-width: 100%; 
 }
 
 .contactInfo h3, .privacyNotice h3 {
   display: flex;
   font-size: 18px;
-  color: #024CAA; /* Culoare titlu */
+  color: #024CAA; 
   margin-bottom: 10px;
 }
 
 .contactInfo p {
   font-size: 15px;
-  color: #333; /* Culoare text */
+  color: #333; 
   line-height: 1.6;
 }
 
 .privacyNotice p {
   font-size: 16px;
-  color: #333; /* Culoare text */
+  color: #333; 
   line-height: 1.6;
 }
 
 .contactInfo a {
-  color: #024CAA; /* Culoare link */
+  color: #024CAA; 
   text-decoration: none;
 }
 
@@ -50,36 +50,34 @@
 }
 
 .privacyNotice strong {
-  color: #EC8305; /* Culoare pentru textul important */
+  color: #EC8305; 
 }
 
 .copyright {
   text-align: center;
   margin-top: 20px;
   font-size: 16px;
-  color: #666; /* Culoare text drepturi de autor */
+  color: #666; 
 }
-
-/* Media queries pentru tablete și desktop */
 
 @media (min-width: 768px) {
   .footerContent {
-    flex-direction: row; /* Layout rând pentru tablete și desktop */
-    flex-wrap: wrap; /* Permite elementelor să se încadreze pe mai multe rânduri */
+    flex-direction: row; 
+    flex-wrap: wrap; 
   }
 
   .contactInfo, .privacyNotice {
-    min-width: calc(50% - 10px); /* Două coloane pe tablete */
+    min-width: calc(50% - 10px); 
   }
 
   .copyright {
-    min-width: 100%; /* Ocupă întreaga lățime */
+    min-width: 100%; 
   }
 }
 
 @media (min-width: 1024px) {
   .contactInfo, .privacyNotice, .copyright {
-    min-width: calc(33.33% - 14px); /* Trei coloane pe desktop */
+    min-width: calc(33.33% - 14px); 
   }
 
   .copyright {

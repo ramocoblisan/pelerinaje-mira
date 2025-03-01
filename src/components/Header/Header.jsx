@@ -103,17 +103,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-          {/* <nav className={styles.nav}>
-            <a href="#about" className={styles.navItem}>
-              <span className={styles.itemName}>Despre</span>
-            </a>
-            <a href="#trips" className={styles.navItem}>
-              <span className={styles.itemName}>Pelerinaje</span>
-            </a>
-            <a href="#contact" className={styles.navItem}>
-              <span className={styles.itemName}>Contact</span>
-            </a>
-          </nav> */}
       </div>
       <p className={styles.rotatingParagraph}>
       Haideți să ne alăturăm Mariei în

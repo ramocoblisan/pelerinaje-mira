@@ -39,7 +39,6 @@
   .topBar {
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 15px; */
     margin-top: 0px;
     padding-top: 0px;
     width: 90vw;

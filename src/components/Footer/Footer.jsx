@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import styles from './Footer.module.css'; // Asigurați-vă că aveți un fișier CSS pentru stilizare
+import styles from './Footer.module.css'; 
 
 const Footer = () => {
 
@@ -14,7 +14,6 @@ const Footer = () => {
     ref={ref}
     className={`${styles.footer} ${inView ? 'fade-in in-view' : 'fade-in'}`}>
       <div className={styles.footerContent}>
-        {/* Informații de contact */}
         <div className={styles.contactInfo}>
           <h3>Contact</h3>
           <p>Pr. Crișan Anton <a href="tel:+40729884881">0729 884 881</a></p>
@@ -22,7 +21,6 @@ const Footer = () => {
           <p>Email: <a href="mailto:contact@pelerinajemira.ro">contact@pelerinajemira.ro</a></p>
         </div>
 
-        {/* Notificare despre date personale */}
         <div className={styles.privacyNotice}>
           <h3>Confidențialitate</h3>
           <p>
@@ -30,7 +28,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Drepturi de autor */}
         <div className={styles.copyright}>
           <p>© {new Date().getFullYear()} Pelerinaje Mira. Toate drepturile rezervate.</p>
         </div>

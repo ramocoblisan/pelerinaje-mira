@@ -6,7 +6,6 @@
   --orangeText: #EC8305;
 }
 
-/* Stiluri de bază pentru mobil */
 .videoSectionContainer {
   position: relative;
   overflow: hidden;
@@ -14,7 +13,6 @@
   width: 100vw;
 }
 
-/* Fundalul cu nori animați */
 .cloudBackground {
   position: absolute;
   top: 0;
@@ -58,14 +56,14 @@
   margin: 20px 0;
   position: relative;
   z-index: 1;
-  opacity: 0; /* Ascunde titlul inițial */
-  transform: translateX(-100%); /* Poziția inițială pentru animație */
+  opacity: 0; 
+  transform: translateX(-100%); 
   transition: opacity 0.5s ease-out, transform 1.5s ease-out;
 }
 
 .sectionTitle.inView {
-  opacity: 1; /* Afișează titlul */
-  transform: translateX(0); /* Adu titlul în poziția normală */
+  opacity: 1; 
+  transform: translateX(0); 
 }
 
 .videoContainer {
@@ -79,7 +77,6 @@
   z-index: 1;
 }
 
-/* Stiluri pentru tabletă */
 @media (min-width: 768px) {
   .videoSectionContainer {
     padding: 30px 0;
@@ -97,7 +94,6 @@
   }
 }
 
-/* Stiluri pentru desktop */
 @media (min-width: 1024px) {
   .videoSectionContainer {
     padding-top: 10px;
@@ -110,7 +106,7 @@
 
   .videoContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Mărește dimensiunea minimă a coloanelor */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     gap: 2rem;
     padding: 1.5rem;
   }

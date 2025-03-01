@@ -7,8 +7,6 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  // CardActions,
-  // Button
 } from '@mui/material';
 
 export default function CardComp({ title, image, period, details, departureDate, returnDate, price, showOverlay, showMoreInfoArrow }) {

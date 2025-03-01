@@ -1,4 +1,3 @@
-/* Stiluri de bază (mobile) */
 .videoPlayer {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -15,27 +14,27 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: black; /* Asigură un fundal negru */
+  background-color: black; 
 }
 
-/* Stiluri pentru tabletă (min-width: 768px) */
+
 @media (min-width: 768px) {
   .videoPlayer h3 {
     font-size: 1.3rem;
   }
 
   .videoPlayer video {
-    max-width: 90%; /* Videoclipurile sunt puțin mai mici pe tabletă */
+    max-width: 90%; 
   }
 }
 
-/* Stiluri pentru desktop (min-width: 1024px) */
+
 @media (min-width: 1024px) {
   .videoPlayer h3 {
     font-size: 1.5rem;
   }
 
   .videoPlayer video {
-    max-width: 800px; /* Lățime maximă pentru desktop */
+    max-width: 800px; 
   }
 }
