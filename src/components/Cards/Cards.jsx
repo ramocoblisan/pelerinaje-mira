@@ -41,10 +41,10 @@ const cardData = [
     title: "Medjugorje",
     image: medjugorje3,
     period: '02.08-10.08',
-    details: ["Festivalul Tineretului", "Excursie la Kravice Falls", "Tur ghidat al orașului"],
-    departureDate: ["Plecare: în data de 21.04.2025 ora 06:00 din parcarea Vivo(Polus Center) Cluj-Napoca"],
-    returnDate: ["Întoarcere: în data de 27.04.2025 aproximativ ora 02:00 în parcarea Vivo(Polus Center) Cluj-Napoca"],
-    price: "1800 RON",
+    details: [" transport", " cazare", " mic dejun și prânz."],
+    departureDate: ["📅 02.08.2025 🕒 06:00", "📍Vivo(Polus Center) Cluj-Napoca"],
+    returnDate: ["📅 10.08.2025 🕒 02:00", "📍Vivo(Polus Center) Cluj-Napoca"],
+    price: "390 €",
   },
   {
     title: "Medjugorje",
@@ -81,14 +81,14 @@ export default function Cards() {
             key={index}
             title={card.title}
             image={card.image}
-            showOverlay={index < 3}
-            showMoreInfoArrow={index < 3}
+            showOverlay={index < 4}
+            showMoreInfoArrow={index < 4}
             period={card.period}
             details={card.details}
             departureDate={card.departureDate}
             returnDate={card.returnDate}
             price={card.price}
-            showButton={index < 3}
+            showButton={index < 4}
           />
         ))}
       </div>
