@@ -47,7 +47,7 @@ export default function CardComp({ title, image, period, details, departureDate,
             gap: '10px'
           }}>
             <div>
-              <span className={styles.text}>În preț sunt incluse urmatoarele:</span>
+              <span className={styles.text}>În preț sunt incluse următoarele:</span>
               <div>{details.join(", ")}</div>
             </div>
             <div><span className={styles.text}>Plecare:</span>
