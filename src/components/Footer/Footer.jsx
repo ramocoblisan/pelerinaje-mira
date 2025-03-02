@@ -18,7 +18,7 @@ const Footer = () => {
           <h3>Contact</h3>
           <p>Pr. Crișan Anton <a href="tel:+40729884881">0729 884 881</a></p>
           <p>Coblișan Alex <a href="tel:0745966920">0745 966 920</a></p>
-          <p>Email: <a href="mailto:contact@pelerinajemira.ro">contact@pelerinajemira.ro</a></p>
+          <p>Email: <a href="mailto:info.pelerinajemira@gmail.com">info.pelerinajemira@gmail.com</a></p>
         </div>
 
         <div className={styles.privacyNotice}>
