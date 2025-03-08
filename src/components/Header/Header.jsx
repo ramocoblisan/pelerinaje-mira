@@ -1,20 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import styles from './Header.module.css';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Header = () => {
 
+  const [backgroundImage, setBackgroundImage] = useState(
+    `${process.env.PUBLIC_URL}/images/mobileBgd.png`
+  );
+
   const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
+    triggerOnce: true, 
+    threshold: 0.1, 
   });
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+    const handleMediaChange = (e) => {
+      if (e.matches) {
+        setBackgroundImage(
+          `linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(${process.env.PUBLIC_URL}/images/headerbgd.png)`
+        );
+      } else {
+        setBackgroundImage(`url(${process.env.PUBLIC_URL}/images/mobileBgd.png)`);
+      }
+    };
+  
+    mediaQuery.addEventListener('change', handleMediaChange); 
+    handleMediaChange(mediaQuery);
+  
+    return () => mediaQuery.removeEventListener('change', handleMediaChange); 
+  }, []);
 
   return (
     <header
       ref={ref}
       className={`${styles.header} ${inView ? 'fade-in in-view' : 'fade-in'}`}
-    >
+      style={{ backgroundImage: backgroundImage }}
+      >
       <div className={styles.topBar}>
         <div className={styles.contacts}>
           <div className={styles.phones}>

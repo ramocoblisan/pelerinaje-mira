@@ -2,12 +2,13 @@ import React from 'react';
 import styles from './Cards.module.css';
 import { useInView } from 'react-intersection-observer';
 import CardComp from '../Card/Card';
-import medjugorje1 from '../../images/medjugorje1.png';
-import medjugorje2 from '../../images/medjugorje2.png';
-import medjugorje3 from '../../images/medjugorje3.png';
-import medjugorje4 from '../../images/medjugorje4.png';
-import medjugorje5 from '../../images/medjugorje5.png';
-import krakow from '../../images/krakow.png';
+const medjugorje1 = `${process.env.PUBLIC_URL}/images/medjugorje1.png`;
+const medjugorje2 = `${process.env.PUBLIC_URL}/images/medjugorje2.png`;
+const medjugorje3 = `${process.env.PUBLIC_URL}/images/medjugorje3.png`;
+const medjugorje4 = `${process.env.PUBLIC_URL}/images/medjugorje4.png`;
+const medjugorje5 = `${process.env.PUBLIC_URL}/images/medjugorje5.png`;
+const krakow = `${process.env.PUBLIC_URL}/images/krakow.png`;
+
 
 const cardData = [
   {
@@ -73,7 +74,12 @@ export default function Cards() {
   });
 
   return (
-    <div ref={ref} className={`${styles.cardSection} ${inView ? 'fade-in in-view' : 'fade-in'}`}>
+    <div 
+    ref={ref} 
+    className={`${styles.cardSection} ${inView ? 'fade-in in-view' : 'fade-in'}`}
+    style={{
+      backgroundImage: `url(${process.env.PUBLIC_URL}/images/bgdsection2-mobile.jpg)`,
+    }}>
       <h2 className={`${styles.title} ${inView ? styles.inView : ''}`}>Pelerinajele anului 2025</h2>
       <div className={styles.cardsContent}>
         {cardData.map((card, index) => (

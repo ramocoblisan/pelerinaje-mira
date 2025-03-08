@@ -2,16 +2,16 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import VideoPlayer from 'components/VideoCarousel/VideoPlayer';
 import styles from './VideosSection.module.css';
-import video1 from '../../assets/videos/video1.mp4';
-import video2 from '../../assets/videos/video2.mp4';
-import video3 from '../../assets/videos/video3.mp4';
-import video4 from '../../assets/videos/video4.mp4';
-import video5 from '../../assets/videos/video5.mp4';
-import poster1 from '../../images/poster1.png';
-import poster2 from '../../images/poster2.png';
-import poster3 from '../../images/poster3.png';
-import poster4 from '../../images/poster4.png';
-import poster5 from '../../images/poster5.png';
+const video1 = `${process.env.PUBLIC_URL}/videos/video1.mp4`;
+const video2 = `${process.env.PUBLIC_URL}/videos/video2.mp4`;
+const video3 = `${process.env.PUBLIC_URL}/videos/video3.mp4`;
+const video4 = `${process.env.PUBLIC_URL}/videos/video4.mp4`;
+const video5 = `${process.env.PUBLIC_URL}/videos/video5.mp4`;
+const poster1 = `${process.env.PUBLIC_URL}/images/poster1.png`;
+const poster2 = `${process.env.PUBLIC_URL}/images/poster2.png`;
+const poster3 = `${process.env.PUBLIC_URL}/images/poster3.png`;
+const poster4 = `${process.env.PUBLIC_URL}/images/poster4.png`;
+const poster5 = `${process.env.PUBLIC_URL}/images/poster5.png`;
 
 const VideoSection = () => {
   const { ref, inView } = useInView({
@@ -33,7 +33,11 @@ const VideoSection = () => {
         ref={ref}
         className={`${styles.videoSectionContainer} ${inView ? 'fade-in in-view' : 'fade-in'}`}
       >
-        <div className={styles.cloudBackground}></div>
+        <div className={styles.cloudBackground}
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/videosSecBackground.jpg)`,
+        }}>
+        </div>
         <h2 className={`${styles.sectionTitle} ${inView ? styles.inView : ''}`}>
           Amintiri din pelerinaje
         </h2>
