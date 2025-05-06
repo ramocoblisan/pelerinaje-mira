@@ -32,10 +32,10 @@ const cardData = [
   {
     title: "Medjugorje",
     image: medjugorje2,
-    period: '20.06-27.06',
+    period: '19.06-26.06',
     details: [" transport", " cazare", " mic dejun și prânz."],
-    departureDate: ["📅 20.06.2025 🕒 06:00", "📍Vivo(Polus Center) Cluj-Napoca"],
-    returnDate: ["📅 27.06.2025 🕒 02:00", "📍Vivo(Polus Center) Cluj-Napoca"],
+    departureDate: ["📅 19.06.2025 🕒 06:00", "📍Vivo(Polus Center) Cluj-Napoca"],
+    returnDate: ["📅 26.06.2025 🕒 02:00", "📍Vivo(Polus Center) Cluj-Napoca"],
     price: "340 €",
   },
   {
